@@ -1,0 +1,460 @@
+[
+  {
+    "StudentId": "1201110101",
+    "StudentName": "GangTian",
+    "Birthday": "2018-11-12T16:33:44.0838462+08:00",
+    "Address": "Tokyo",
+    "PropertyList": [
+      {
+        "PropertyIndex": 1,
+        "PropertyName": "Gender",
+        "Text": "Male",
+        "Data": "",
+        "UnitName": "",
+        "DataType": 0,
+        "ReadOnly": true,
+        "Tag": null,
+        "Group": {
+          "GroupIndex": 1,
+          "GroupName": "Base"
+        },
+        "Project": null,
+        "Custom": null,
+        "Note": null
+      },
+      {
+        "PropertyIndex": 2,
+        "PropertyName": "GMAT",
+        "Text": 580,
+        "Data": "",
+        "UnitName": "Point",
+        "DataType": 1,
+        "ReadOnly": true,
+        "Tag": null,
+        "Group": {
+          "GroupIndex": 1,
+          "GroupName": "Base"
+        },
+        "Project": null,
+        "Custom": null,
+        "Note": null
+      },
+      {
+        "PropertyIndex": 3,
+        "PropertyName": "Character",
+        "Text": "Open-Minded",
+        "Data": "",
+        "UnitName": "",
+        "DataType": 0,
+        "ReadOnly": true,
+        "Tag": null,
+        "Group": {
+          "GroupIndex": 1,
+          "GroupName": "Base"
+        },
+        "Project": null,
+        "Custom": null,
+        "Note": null
+      },
+      {
+        "PropertyIndex": 4,
+        "PropertyName": "Major",
+        "Text": "Computer Science & Technology",
+        "Data": "",
+        "UnitName": "",
+        "DataType": 0,
+        "ReadOnly": true,
+        "Tag": null,
+        "Group": {
+          "GroupIndex": 1,
+          "GroupName": "Base"
+        },
+        "Project": null,
+        "Custom": null,
+        "Note": null
+      },
+      {
+        "PropertyIndex": 5,
+        "PropertyName": "Higher Mathematics",
+        "Text": 1,
+        "Data": "80, 75, 67, 82",
+        "UnitName": "Point",
+        "DataType": 3,
+        "ReadOnly": true,
+        "Tag": null,
+        "Group": {
+          "GroupIndex": 2,
+          "GroupName": "GPA"
+        },
+        "Project": null,
+        "Custom": null,
+        "Note": null
+      },
+      {
+        "PropertyIndex": 6,
+        "PropertyName": "Linear Algebra",
+        "Text": 2,
+        "Data": "80, 75, 67, 82",
+        "UnitName": "Point",
+        "DataType": 3,
+        "ReadOnly": true,
+        "Tag": null,
+        "Group": {
+          "GroupIndex": 2,
+          "GroupName": "GPA"
+        },
+        "Project": null,
+        "Custom": null,
+        "Note": null
+      },
+      {
+        "PropertyIndex": 7,
+        "PropertyName": "Discrete Mathematics",
+        "Text": 0,
+        "Data": "83, 75, 67, 82",
+        "UnitName": "Point",
+        "DataType": 3,
+        "ReadOnly": true,
+        "Tag": null,
+        "Group": {
+          "GroupIndex": 2,
+          "GroupName": "GPA"
+        },
+        "Project": null,
+        "Custom": null,
+        "Note": null
+      },
+      {
+        "PropertyIndex": 8,
+        "PropertyName": "Hobby",
+        "Text": 0,
+        "Data": "Game, Music",
+        "UnitName": "",
+        "DataType": 3,
+        "ReadOnly": true,
+        "Tag": null,
+        "Group": {
+          "GroupIndex": 3,
+          "GroupName": "Other"
+        },
+        "Project": null,
+        "Custom": null,
+        "Note": null
+      },
+      {
+        "PropertyIndex": 9,
+        "PropertyName": "Features",
+        "Text": "Programming",
+        "Data": "",
+        "UnitName": "",
+        "DataType": 0,
+        "ReadOnly": true,
+        "Tag": null,
+        "Group": {
+          "GroupIndex": 3,
+          "GroupName": "Other"
+        },
+        "Project": null,
+        "Custom": null,
+        "Note": null
+      },
+      {
+        "PropertyIndex": 10,
+        "PropertyName": "Is Attend Part-time",
+        "Text": true,
+        "Data": "",
+        "UnitName": "",
+        "DataType": 2,
+        "ReadOnly": true,
+        "Tag": null,
+        "Group": {
+          "GroupIndex": 3,
+          "GroupName": "Other"
+        },
+        "Project": null,
+        "Custom": null,
+        "Note": null
+      },
+      {
+        "PropertyIndex": 11,
+        "PropertyName": "Family Income",
+        "Text": 100000,
+        "Data": "",
+        "UnitName": "Yuan",
+        "DataType": 1,
+        "ReadOnly": true,
+        "Tag": null,
+        "Group": {
+          "GroupIndex": 3,
+          "GroupName": "Other"
+        },
+        "Project": null,
+        "Custom": null,
+        "Note": null
+      },
+      {
+        "PropertyIndex": 12,
+        "PropertyName": "Favorite Game",
+        "Text": "War III",
+        "Data": "",
+        "UnitName": "",
+        "DataType": 0,
+        "ReadOnly": true,
+        "Tag": null,
+        "Group": {
+          "GroupIndex": 3,
+          "GroupName": "Other"
+        },
+        "Project": null,
+        "Custom": null,
+        "Note": null
+      },
+      {
+        "PropertyIndex": 13,
+        "PropertyName": "Work Project",
+        "Text": "Book MIS",
+        "Data": "",
+        "UnitName": "",
+        "DataType": 0,
+        "ReadOnly": true,
+        "Tag": null,
+        "Group": {
+          "GroupIndex": 3,
+          "GroupName": "Other"
+        },
+        "Project": null,
+        "Custom": null,
+        "Note": null
+      }
+    ]
+  },
+  {
+    "StudentId": "1201110102",
+    "StudentName": "Catalina",
+    "Birthday": "2018-11-12T16:33:44.0858388+08:00",
+    "Address": "New York",
+    "PropertyList": [
+      {
+        "PropertyIndex": 1,
+        "PropertyName": "Gender",
+        "Text": "Female",
+        "Data": "",
+        "UnitName": "",
+        "DataType": 0,
+        "ReadOnly": true,
+        "Tag": null,
+        "Group": {
+          "GroupIndex": 1,
+          "GroupName": "Base"
+        },
+        "Project": null,
+        "Custom": null,
+        "Note": null
+      },
+      {
+        "PropertyIndex": 2,
+        "PropertyName": "GMAT",
+        "Text": 580,
+        "Data": "",
+        "UnitName": "Point",
+        "DataType": 1,
+        "ReadOnly": true,
+        "Tag": null,
+        "Group": {
+          "GroupIndex": 1,
+          "GroupName": "Base"
+        },
+        "Project": null,
+        "Custom": null,
+        "Note": null
+      },
+      {
+        "PropertyIndex": 3,
+        "PropertyName": "Character",
+        "Text": "Open-Minded",
+        "Data": "",
+        "UnitName": "",
+        "DataType": 0,
+        "ReadOnly": true,
+        "Tag": null,
+        "Group": {
+          "GroupIndex": 1,
+          "GroupName": "Base"
+        },
+        "Project": null,
+        "Custom": null,
+        "Note": null
+      },
+      {
+        "PropertyIndex": 4,
+        "PropertyName": "Major",
+        "Text": "Computer Science & Technology",
+        "Data": "",
+        "UnitName": "",
+        "DataType": 0,
+        "ReadOnly": true,
+        "Tag": null,
+        "Group": {
+          "GroupIndex": 1,
+          "GroupName": "Base"
+        },
+        "Project": null,
+        "Custom": null,
+        "Note": null
+      },
+      {
+        "PropertyIndex": 5,
+        "PropertyName": "Higher Mathematics",
+        "Text": 1,
+        "Data": "80, 75, 67, 82",
+        "UnitName": "Point",
+        "DataType": 3,
+        "ReadOnly": true,
+        "Tag": null,
+        "Group": {
+          "GroupIndex": 2,
+          "GroupName": "GPA"
+        },
+        "Project": null,
+        "Custom": null,
+        "Note": null
+      },
+      {
+        "PropertyIndex": 6,
+        "PropertyName": "Linear Algebra",
+        "Text": 2,
+        "Data": "80, 75, 67, 82",
+        "UnitName": "Point",
+        "DataType": 3,
+        "ReadOnly": true,
+        "Tag": null,
+        "Group": {
+          "GroupIndex": 2,
+          "GroupName": "GPA"
+        },
+        "Project": null,
+        "Custom": null,
+        "Note": null
+      },
+      {
+        "PropertyIndex": 7,
+        "PropertyName": "Discrete Mathematics",
+        "Text": 0,
+        "Data": "83, 75, 67, 82",
+        "UnitName": "Point",
+        "DataType": 3,
+        "ReadOnly": true,
+        "Tag": null,
+        "Group": {
+          "GroupIndex": 2,
+          "GroupName": "GPA"
+        },
+        "Project": null,
+        "Custom": null,
+        "Note": null
+      },
+      {
+        "PropertyIndex": 8,
+        "PropertyName": "Hobby",
+        "Text": 0,
+        "Data": "Game, Music",
+        "UnitName": "",
+        "DataType": 3,
+        "ReadOnly": true,
+        "Tag": null,
+        "Group": {
+          "GroupIndex": 3,
+          "GroupName": "Other"
+        },
+        "Project": null,
+        "Custom": null,
+        "Note": null
+      },
+      {
+        "PropertyIndex": 9,
+        "PropertyName": "Features",
+        "Text": "Programming",
+        "Data": "",
+        "UnitName": "",
+        "DataType": 0,
+        "ReadOnly": true,
+        "Tag": null,
+        "Group": {
+          "GroupIndex": 3,
+          "GroupName": "Other"
+        },
+        "Project": null,
+        "Custom": null,
+        "Note": null
+      },
+      {
+        "PropertyIndex": 10,
+        "PropertyName": "Is Attend Part-time",
+        "Text": true,
+        "Data": "",
+        "UnitName": "",
+        "DataType": 2,
+        "ReadOnly": true,
+        "Tag": null,
+        "Group": {
+          "GroupIndex": 3,
+          "GroupName": "Other"
+        },
+        "Project": null,
+        "Custom": null,
+        "Note": null
+      },
+      {
+        "PropertyIndex": 11,
+        "PropertyName": "Family Income",
+        "Text": 100000,
+        "Data": "",
+        "UnitName": "Yuan",
+        "DataType": 1,
+        "ReadOnly": true,
+        "Tag": null,
+        "Group": {
+          "GroupIndex": 3,
+          "GroupName": "Other"
+        },
+        "Project": null,
+        "Custom": null,
+        "Note": null
+      },
+      {
+        "PropertyIndex": 12,
+        "PropertyName": "Favorite Game",
+        "Text": "War III",
+        "Data": "",
+        "UnitName": "",
+        "DataType": 0,
+        "ReadOnly": true,
+        "Tag": null,
+        "Group": {
+          "GroupIndex": 3,
+          "GroupName": "Other"
+        },
+        "Project": null,
+        "Custom": null,
+        "Note": null
+      },
+      {
+        "PropertyIndex": 13,
+        "PropertyName": "Work Project",
+        "Text": "Book MIS",
+        "Data": "",
+        "UnitName": "",
+        "DataType": 0,
+        "ReadOnly": true,
+        "Tag": null,
+        "Group": {
+          "GroupIndex": 3,
+          "GroupName": "Other"
+        },
+        "Project": null,
+        "Custom": null,
+        "Note": null
+      }
+    ]
+  }
+]

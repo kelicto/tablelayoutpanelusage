@@ -62,7 +62,7 @@
     </Compile>
     <Compile Include="StudentProperty.cs" />
     <Compile Include="StudentPropertyCollection.cs" />
-    <Compile Include="TlpUnil.cs" />
+    <Compile Include="TableLayoutPanelUtil.cs" />
     <Compile Include="MainForm.cs">
       <SubType>Form</SubType>
     </Compile>

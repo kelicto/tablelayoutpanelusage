@@ -1,3 +1,3 @@
 # HelloTableLayoutPanel
 * About TableLayoutPanel control advanced usage.
-* ![image](https://user-images.githubusercontent.com/23723575/117774707-5c51aa00-b26c-11eb-9217-517498850b9f.png)
+* ![001](https://user-images.githubusercontent.com/23723575/117775344-ff0a2880-b26c-11eb-9216-71ba4a3f55b2.png)

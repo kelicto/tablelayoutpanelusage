@@ -30,11 +30,11 @@
         {
             this.splStudent = new System.Windows.Forms.SplitContainer();
             this.dgvStudent = new System.Windows.Forms.DataGridView();
-            this.tlpStudent = new System.Windows.Forms.TableLayoutPanel();
             this.dgiStudentId = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dgiStudentName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dgiBirthday = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dgiAddress = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tlpStudent = new System.Windows.Forms.TableLayoutPanel();
             ((System.ComponentModel.ISupportInitialize)(this.splStudent)).BeginInit();
             this.splStudent.Panel1.SuspendLayout();
             this.splStudent.Panel2.SuspendLayout();
@@ -56,8 +56,8 @@
             // 
             this.splStudent.Panel2.AutoScroll = true;
             this.splStudent.Panel2.Controls.Add(this.tlpStudent);
-            this.splStudent.Size = new System.Drawing.Size(934, 815);
-            this.splStudent.SplitterDistance = 498;
+            this.splStudent.Size = new System.Drawing.Size(884, 461);
+            this.splStudent.SplitterDistance = 471;
             this.splStudent.TabIndex = 0;
             // 
             // dgvStudent
@@ -77,25 +77,9 @@
             this.dgvStudent.RowHeadersVisible = false;
             this.dgvStudent.RowTemplate.Height = 23;
             this.dgvStudent.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvStudent.Size = new System.Drawing.Size(498, 815);
+            this.dgvStudent.Size = new System.Drawing.Size(471, 461);
             this.dgvStudent.TabIndex = 2;
             this.dgvStudent.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DgvStudent_CellClick);
-            // 
-            // tlpStudent
-            // 
-            this.tlpStudent.AutoScroll = true;
-            this.tlpStudent.ColumnCount = 4;
-            this.tlpStudent.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 15F));
-            this.tlpStudent.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tlpStudent.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 35F));
-            this.tlpStudent.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tlpStudent.Dock = System.Windows.Forms.DockStyle.Top;
-            this.tlpStudent.Location = new System.Drawing.Point(0, 0);
-            this.tlpStudent.Name = "tlpStudent";
-            this.tlpStudent.RowCount = 1;
-            this.tlpStudent.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tlpStudent.Size = new System.Drawing.Size(432, 811);
-            this.tlpStudent.TabIndex = 0;
             // 
             // dgiStudentId
             // 
@@ -127,15 +111,34 @@
             this.dgiAddress.Name = "dgiAddress";
             this.dgiAddress.ReadOnly = true;
             // 
-            // MainForm
+            // tlpStudent
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.tlpStudent.AutoScroll = true;
+            this.tlpStudent.ColumnCount = 4;
+            this.tlpStudent.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 15F));
+            this.tlpStudent.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tlpStudent.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 35F));
+            this.tlpStudent.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tlpStudent.Dock = System.Windows.Forms.DockStyle.Top;
+            this.tlpStudent.Location = new System.Drawing.Point(0, 0);
+            this.tlpStudent.Name = "tlpStudent";
+            this.tlpStudent.RowCount = 1;
+            this.tlpStudent.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.tlpStudent.Size = new System.Drawing.Size(392, 749);
+            this.tlpStudent.TabIndex = 0;
+            // 
+            // MainFrm
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.HighlightText;
-            this.ClientSize = new System.Drawing.Size(934, 815);
+            this.ClientSize = new System.Drawing.Size(884, 461);
             this.Controls.Add(this.splStudent);
-            this.Name = "MainForm";
-            this.Text = "MainForm";
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
+            this.Name = "MainFrm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Hello, TableLayoutePanel";
             this.Load += new System.EventHandler(this.MainForm_Load);
             this.splStudent.Panel1.ResumeLayout(false);
             this.splStudent.Panel2.ResumeLayout(false);

@@ -1,6 +1,6 @@
-﻿namespace KeLi.TableLayoutPanelUsage.App
+﻿namespace KeLi.HelloTableLayoutPanel.App
 {
-    partial class MainForm
+    partial class MainFrm
     {
         /// <summary>
         /// Required designer variable.

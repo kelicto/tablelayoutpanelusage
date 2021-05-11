@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28729.10
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KeLi.TableLayoutPanelUsage.App", "KeLi.TableLayoutPanelUsage.App\KeLi.TableLayoutPanelUsage.App.csproj", "{54F720E8-FFC6-4B40-AC45-CE1AD9C78865}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KeLi.HelloTableLayoutPanel.App", "KeLi.HelloTableLayoutPanel.App\KeLi.HelloTableLayoutPanel.App.csproj", "{54F720E8-FFC6-4B40-AC45-CE1AD9C78865}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -18,5 +18,8 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {47745E5F-B87C-4E6A-B538-7C3E93AEB9E5}
 	EndGlobalSection
 EndGlobal

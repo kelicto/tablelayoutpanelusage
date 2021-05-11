@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace KeLi.TableLayoutPanelUsage.App.Properties {
+namespace KeLi.HelloTableLayoutPanel.App.Properties {
     using System;
     
     
@@ -39,7 +39,7 @@ namespace KeLi.TableLayoutPanelUsage.App.Properties {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("KeLi.TableLayoutPanelUsage.App.Properties.Resources", typeof(Resources).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("KeLi.HelloTableLayoutPanel.App.Properties.Resources", typeof(Resources).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;

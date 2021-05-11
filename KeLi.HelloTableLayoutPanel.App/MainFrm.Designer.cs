@@ -64,6 +64,7 @@
             // 
             this.dgvStudent.AllowUserToAddRows = false;
             this.dgvStudent.AllowUserToDeleteRows = false;
+            this.dgvStudent.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgvStudent.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvStudent.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dgiStudentId,
@@ -124,7 +125,7 @@
             this.tlpStudent.Name = "tlpStudent";
             this.tlpStudent.RowCount = 1;
             this.tlpStudent.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tlpStudent.Size = new System.Drawing.Size(392, 749);
+            this.tlpStudent.Size = new System.Drawing.Size(409, 461);
             this.tlpStudent.TabIndex = 0;
             // 
             // MainFrm

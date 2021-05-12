@@ -44,7 +44,6 @@ namespace KeLi.HelloTableLayoutPanel.App.Utils
             if (_lblCategory == null || _lblCategory.Text != stuProp.Group.GroupName)
             {
                 _lblCategory = tlpDefault.AddLabel(stuProp.Group.GroupName, ContentAlignment.MiddleCenter);
-
                 _lblCategory.Margin = new Padding(0);
 
                 tlpDefault.Controls.Add(_lblCategory, 0, tlpDefault.RowCount - 1);
@@ -146,13 +145,9 @@ namespace KeLi.HelloTableLayoutPanel.App.Utils
             return new CheckBox
             {
                 Text = text.ToString(),
-
                 Anchor = AnchorStyles.Left,
-
                 Dock = DockStyle.Fill,
-
                 Checked = check,
-
                 Enabled = readOnly
             };
         }
@@ -167,11 +162,8 @@ namespace KeLi.HelloTableLayoutPanel.App.Utils
             return new ComboBox
             {
                 Anchor = AnchorStyles.Left,
-
                 Dock = DockStyle.Fill,
-
                 DataSource = items,
-
                 DropDownStyle = ComboBoxStyle.DropDownList
             };
         }

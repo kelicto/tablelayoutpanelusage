@@ -12,6 +12,6 @@ namespace KeLi.HelloTableLayoutPanel.App.Models
 
         public string Address { get; set; }
 
-        public StudentPropertyCollection PropertyList { get; set; }
+        public StudentPropertyCollection Properties { get; set; }
     }
 }

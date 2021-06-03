@@ -13,40 +13,40 @@ namespace KeLi.HelloTableLayoutPanel.App.Utils
 
         private static int _groupCount;
 
-        public static void AddController(this TableLayoutPanel tlpDefault, StudentProperty stuProp)
+        public static void AddController(this TableLayoutPanel tlp, StudentProperty studentProperty)
         {
-            tlpDefault.RowStyles.Add(new RowStyle(SizeType.Absolute, 30));
+            tlp.RowStyles.Add(new RowStyle(SizeType.Absolute, 30));
 
-            if (tlpDefault.RowCount == 1)
+            if (tlp.RowCount == 1)
             {
                 // Refresh data.
                 _lblCategory = null;
 
-                var lblGroup = tlpDefault.AddLabel("Group", ContentAlignment.MiddleCenter);
+                var lblGroup = CreateLabel("Group", ContentAlignment.MiddleCenter);
 
-                tlpDefault.Controls.Add(lblGroup, 0, tlpDefault.RowCount - 1);
+                tlp.Controls.Add(lblGroup, 0, tlp.RowCount - 1);
 
-                var lblName = tlpDefault.AddLabel("Parameter", ContentAlignment.MiddleCenter);
+                var lblParameterName = CreateLabel("Parameter", ContentAlignment.MiddleCenter);
 
-                tlpDefault.Controls.Add(lblName, 1, tlpDefault.RowCount - 1);
+                tlp.Controls.Add(lblParameterName, 1, tlp.RowCount - 1);
 
-                var lblValue = tlpDefault.AddLabel("Value", ContentAlignment.MiddleCenter);
+                var lblValue = CreateLabel("Value", ContentAlignment.MiddleCenter);
 
-                tlpDefault.Controls.Add(lblValue, 2, tlpDefault.RowCount - 1);
+                tlp.Controls.Add(lblValue, 2, tlp.RowCount - 1);
 
-                var lblUnit = tlpDefault.AddLabel("Unit", ContentAlignment.MiddleCenter);
+                var lblUnit = CreateLabel("Unit", ContentAlignment.MiddleCenter);
 
-                tlpDefault.Controls.Add(lblUnit, 3, tlpDefault.RowCount - 1);
+                tlp.Controls.Add(lblUnit, 3, tlp.RowCount - 1);
             }
 
-            tlpDefault.RowCount++;
+            tlp.RowCount++;
 
-            if (_lblCategory == null || _lblCategory.Text != stuProp.Group.GroupName)
+            if (_lblCategory == null || _lblCategory.Text != studentProperty.Group.GroupName)
             {
-                _lblCategory = tlpDefault.AddLabel(stuProp.Group.GroupName, ContentAlignment.MiddleCenter);
+                _lblCategory = CreateLabel(studentProperty.Group.GroupName, ContentAlignment.MiddleCenter);
                 _lblCategory.Margin = new Padding(0);
 
-                tlpDefault.Controls.Add(_lblCategory, 0, tlpDefault.RowCount - 1);
+                tlp.Controls.Add(_lblCategory, 0, tlp.RowCount - 1);
 
                 _groupCount = 1;
             }
@@ -55,57 +55,44 @@ namespace KeLi.HelloTableLayoutPanel.App.Utils
             {
                 _groupCount++;
 
-                tlpDefault.SetRowSpan(_lblCategory, _groupCount);
+                tlp.SetRowSpan(_lblCategory, _groupCount);
             }
 
             // Label
-            var labName = tlpDefault.AddLabel(stuProp.PropertyName, ContentAlignment.MiddleLeft);
-
-            tlpDefault.Controls.Add(labName, 1, tlpDefault.RowCount - 1);
-
-            // Value
-            var ctrlValue = new Control();
-
-            switch (stuProp.DataType)
             {
-                case InputType.Label:
-                {
-                    ctrlValue = tlpDefault.AddLabel(stuProp.Text, ContentAlignment.MiddleLeft);
+                var labParameterName = CreateLabel(studentProperty.PropertyName, ContentAlignment.MiddleLeft);
 
-                    break;
-                }
-
-                case InputType.Text:
-                {
-                    ctrlValue = tlpDefault.AddTextBox(stuProp.Text, stuProp.ReadOnly);
-
-                    break;
-                }
-
-                case InputType.Check:
-                {
-                    ctrlValue = tlpDefault.AddCheckBox(stuProp.PropertyName, (bool)stuProp.Text, stuProp.ReadOnly);
-
-                    break;
-                }
-
-                case InputType.Select:
-                {
-                    ctrlValue = tlpDefault.AddComboBox(Convert.ToInt32(stuProp.Text), stuProp.Data);
-
-                    break;
-                }
+                tlp.Controls.Add(labParameterName, 1, tlp.RowCount - 1);
             }
 
-            tlpDefault.Controls.Add(ctrlValue, 2, tlpDefault.RowCount - 1);
+            // Value
+            {
+                var ctrlValue = new Control();
+
+                if (studentProperty.DataType == InputType.Label)
+                    ctrlValue = CreateLabel(studentProperty.Text, ContentAlignment.MiddleLeft);
+
+                else if (studentProperty.DataType == InputType.Text)
+                    ctrlValue = CreateTextBox(studentProperty.Text, studentProperty.ReadOnly);
+
+                else if (studentProperty.DataType == InputType.Check)
+                    ctrlValue = CreateCheckBox(studentProperty.PropertyName, (bool)studentProperty.Text, studentProperty.ReadOnly);
+
+                else if (studentProperty.DataType == InputType.Select)
+                    ctrlValue = CreateComboBox(Convert.ToInt32(studentProperty.Text), studentProperty.Data);
+
+                tlp.Controls.Add(ctrlValue, 2, tlp.RowCount - 1);
+            }
 
             // Unit
-            var unit = tlpDefault.AddLabel(stuProp.UnitName, ContentAlignment.MiddleLeft);
+            {
+                var unit = CreateLabel(studentProperty.UnitName, ContentAlignment.MiddleLeft);
 
-            tlpDefault.Controls.Add(unit, 3, tlpDefault.RowCount - 1);
+                tlp.Controls.Add(unit, 3, tlp.RowCount - 1);
+            }
         }
 
-        public static Label AddLabel(this TableLayoutPanel tlpDefault, object text, ContentAlignment aligen)
+        public static Label CreateLabel(object text, ContentAlignment aligen)
         {
             return new Label
             {
@@ -116,7 +103,7 @@ namespace KeLi.HelloTableLayoutPanel.App.Utils
             };
         }
 
-        public static TextBox AddTextBox(this TableLayoutPanel tlpDefault, object text, bool readOnly)
+        public static TextBox CreateTextBox(object text, bool readOnly)
         {
             return new TextBox
             {
@@ -128,7 +115,7 @@ namespace KeLi.HelloTableLayoutPanel.App.Utils
             };
         }
 
-        public static Button AddButton(this TableLayoutPanel tlpDefault, object text, bool enable)
+        public static Button CreateButton(object text, bool enable)
         {
             return new Button
             {
@@ -140,7 +127,7 @@ namespace KeLi.HelloTableLayoutPanel.App.Utils
             };
         }
 
-        public static CheckBox AddCheckBox(this TableLayoutPanel tlpDefault, object text, bool check, bool readOnly = false)
+        public static CheckBox CreateCheckBox(object text, bool check, bool readOnly = false)
         {
             return new CheckBox
             {
@@ -152,7 +139,7 @@ namespace KeLi.HelloTableLayoutPanel.App.Utils
             };
         }
 
-        public static ComboBox AddComboBox(this TableLayoutPanel tlpDefault, int index, object data)
+        public static ComboBox CreateComboBox(int index, object data)
         {
             var items = data.ToString().Replace(" ", string.Empty).Split(',').ToList();
 

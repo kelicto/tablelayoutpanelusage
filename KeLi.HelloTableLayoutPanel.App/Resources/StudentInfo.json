@@ -4,7 +4,7 @@
     "StudentName": "GangTian",
     "Birthday": "2018-11-12T16:33:44.0838462+08:00",
     "Address": "Tokyo",
-    "PropertyList": [
+    "Properties": [
       {
         "PropertyIndex": 1,
         "PropertyName": "Gender",
@@ -233,7 +233,7 @@
     "StudentName": "Catalina",
     "Birthday": "2018-11-12T16:33:44.0858388+08:00",
     "Address": "New York",
-    "PropertyList": [
+    "Properties": [
       {
         "PropertyIndex": 1,
         "PropertyName": "Gender",

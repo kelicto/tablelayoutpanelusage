@@ -2,18 +2,6 @@
 {
     public class StudentProperty
     {
-        public StudentProperty(int propertyIndex, string propertyName, object text, object data, InputType type, GroupInfo groupInfo, string unitName, bool readOnly = true)
-        {
-            PropertyIndex = propertyIndex;
-            PropertyName = propertyName;
-            Text = text;
-            Data = data;
-            DataType = type;
-            Group = groupInfo;
-            UnitName = unitName;
-            ReadOnly = readOnly;
-        }
-
         public int PropertyIndex { get; set; }
 
         public string PropertyName { get; set; }
@@ -37,10 +25,5 @@
         public CustuomInfo Custom { get; set; }
 
         public string Note { get; set; }
-
-        public override string ToString()
-        {
-            return PropertyName;
-        }
     }
 }

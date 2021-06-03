@@ -62,6 +62,7 @@
     </Compile>
     <Compile Include="Models\StudentProperty.cs" />
     <Compile Include="Models\StudentPropertyCollection.cs" />
+    <Compile Include="Utils\StudentDataService.cs" />
     <Compile Include="Utils\TableLayoutPanelUtil.cs" />
     <Compile Include="MainFrm.cs">
       <SubType>Form</SubType>

@@ -6,6 +6,6 @@
 
         public string CustomName { get; set; }
 
-        public string Tel { get; set; }
+        public string Telephone { get; set; }
     }
 }

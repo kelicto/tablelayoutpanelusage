@@ -115,6 +115,7 @@
             // tlpStudent
             // 
             this.tlpStudent.AutoScroll = true;
+            this.tlpStudent.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Single;
             this.tlpStudent.ColumnCount = 4;
             this.tlpStudent.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 15F));
             this.tlpStudent.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));

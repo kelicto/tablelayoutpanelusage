@@ -33,7 +33,7 @@ namespace KeLi.HelloTableLayoutPanel.App
             var properties = _service.GetSortedStudentProperties(studentInfos.First());
 
             tlpStudent.Height = properties.Count * 31 + 25;
-            properties.ForEach(g => tlpStudent.AddController(g));
+            properties.ForEach(g => tlpStudent.AddControl(g));
 
             tlpStudent.ResumeLayout();
         }
@@ -49,7 +49,7 @@ namespace KeLi.HelloTableLayoutPanel.App
             var studentInfo = _service.GetStudentInfos().FirstOrDefault(f => f.StudentId == studentId);
             var properties = _service.GetSortedStudentProperties(studentInfo);
 
-            properties.ForEach(f => tlpStudent.AddController(f));
+            properties.ForEach(f => tlpStudent.AddControl(f));
 
             tlpStudent.ResumeLayout();
         }

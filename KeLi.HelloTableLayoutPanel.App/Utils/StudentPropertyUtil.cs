@@ -7,13 +7,13 @@ using KeLi.HelloTableLayoutPanel.App.Models;
 
 namespace KeLi.HelloTableLayoutPanel.App.Utils
 {
-    public static class TableLayoutPanelUtil
+    public static class StudentPropertyUtil
     {
         private static Label _lblCategory;
 
         private static int _groupCount;
 
-        public static void AddController(this TableLayoutPanel tlp, StudentProperty studentProperty)
+        public static void AddControl(this TableLayoutPanel tlp, StudentProperty studentProperty)
         {
             tlp.RowStyles.Add(new RowStyle(SizeType.Absolute, 30));
 

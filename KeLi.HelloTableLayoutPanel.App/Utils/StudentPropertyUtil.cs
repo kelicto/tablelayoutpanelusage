@@ -1,5 +1,4 @@
-﻿using System;
-using System.Drawing;
+﻿using System.Drawing;
 using System.Linq;
 using System.Windows.Forms;
 
@@ -9,9 +8,9 @@ namespace KeLi.HelloTableLayoutPanel.App.Utils
 {
     public static class StudentPropertyUtil
     {
-        private static Label _lblCategory;
+        private static Label _lblCurrentGroup;
 
-        private static int _groupCount;
+        private static int _groupItemCount;
 
         public static void AddControl(this TableLayoutPanel tlp, StudentProperty studentProperty)
         {
@@ -20,7 +19,7 @@ namespace KeLi.HelloTableLayoutPanel.App.Utils
             if (tlp.RowCount == 1)
             {
                 // Refresh data.
-                _lblCategory = null;
+                _lblCurrentGroup = null;
 
                 var lblGroup = CreateLabel("Group", ContentAlignment.MiddleCenter);
 
@@ -41,21 +40,21 @@ namespace KeLi.HelloTableLayoutPanel.App.Utils
 
             tlp.RowCount++;
 
-            if (_lblCategory == null || _lblCategory.Text != studentProperty.Group.GroupName)
+            if (_lblCurrentGroup == null || _lblCurrentGroup.Text != studentProperty.Group.GroupName)
             {
-                _lblCategory = CreateLabel(studentProperty.Group.GroupName, ContentAlignment.MiddleCenter);
-                _lblCategory.Margin = new Padding(0);
+                _lblCurrentGroup = CreateLabel(studentProperty.Group.GroupName, ContentAlignment.MiddleCenter);
+                _lblCurrentGroup.Margin = new Padding(0);
 
-                tlp.Controls.Add(_lblCategory, 0, tlp.RowCount - 1);
+                tlp.Controls.Add(_lblCurrentGroup, 0, tlp.RowCount - 1);
 
-                _groupCount = 1;
+                _groupItemCount = 1;
             }
 
             else
             {
-                _groupCount++;
+                _groupItemCount++;
 
-                tlp.SetRowSpan(_lblCategory, _groupCount);
+                tlp.SetRowSpan(_lblCurrentGroup, _groupItemCount);
             }
 
             // Label
@@ -79,7 +78,7 @@ namespace KeLi.HelloTableLayoutPanel.App.Utils
                     ctrlValue = CreateCheckBox(studentProperty.PropertyName, (bool)studentProperty.Text, studentProperty.ReadOnly);
 
                 else if (studentProperty.DataType == InputType.Select)
-                    ctrlValue = CreateComboBox(Convert.ToInt32(studentProperty.Text), studentProperty.Data);
+                    ctrlValue = CreateComboBox(studentProperty.Data);
 
                 tlp.Controls.Add(ctrlValue, 2, tlp.RowCount - 1);
             }
@@ -139,12 +138,9 @@ namespace KeLi.HelloTableLayoutPanel.App.Utils
             };
         }
 
-        public static ComboBox CreateComboBox(int index, object data)
+        public static ComboBox CreateComboBox(object data)
         {
             var items = data.ToString().Replace(" ", string.Empty).Split(',').ToList();
-
-            items.Insert(0, items[index]);
-            items.RemoveAt(index + 1);
 
             return new ComboBox
             {
